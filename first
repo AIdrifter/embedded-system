@@ -1,0 +1,107 @@
+# first class
+1. C 語言是1補數 還是2補數?
+
+2.coding stytle Kiss
+
+3.cpu fast
+	cache choheriance
+	CPU + GPU 異質多核
+
+3.big data
+	sort algorothm: merge sort!
+
+4. cpu : risc and cisc
+	現在其實已經沒有分別 mixed
+	risc : simple instruction , low cycle
+	compiler 優化
+	寫組語 贏不了compiler 優化
+	
+5.數學系：數學導論	
+	lambda calculus
+	big data 需要利用遞迴去處理
+		1.no local variable
+			=> multi processor 
+		2.3.1416....8051 4bits
+	      計算圓周率
+
+6.why C language don't give swap function ??
+	branch perdiction
+			#include <stdint.h>
+    		int32_t a, b;
+			if (b < 0) a++;
+		    <=>  a -= b >> 31; # reduce pipeline store
+	super scalar
+
+7.SQL lite
+	1.virtual machine:查詢化簡
+
+8.compiler GNU linux 
+http://www.slideshare.net/jserv/how-a-compiler-works-gnu-toolchain
+
+9.組語 注意螞
+
+compiler 轉組語
+assemble 轉成machine code（cpu 可以認得的格式
+
+bra
+jump
+
+8.jcon
+
+# afternoon
+link list
+
+1.call by value
+2.swap link list
+    a.assert
+    2.memory violation
+
+3. object vs object originted
+    分數       分數導向
+
+   C       : 有明確儲存空間就是object
+   pointer : 用數值存取物件
+
+
+compiler 無法優化 pointer aliasing
+    foo(&num,&num,&num,5566)
+        restrict pointer aliasing
+        注意 C operator
+        SSA : 主流compiler 技術
+        IR: lisp : gcc 創辦人is lisp fan, there are many ())))))) in code.
+
+
+peephole : 以管窺天optimaized
+           把code掃過  觀察某些特定變數
+           # ipo : Inter procedural optimization
+           compilation unit 盡量使用區域變數
+            static varaible
+
+           function
+                enter: prologue  exit:epologune
+                linker 去換掉 isOdd
+                        WPO: whole progeam optimization 
+                        gcc: Link time optimization
+                       
+
+LLVM
+    OpenCL                 
+    C 語言 compiler 會幫你推導型態
+        float vs int (type theory)
+
+        programing language theory: 游易平
+
+
+Aligment :
+    跨平台要處理,每個CPU架構不一樣. 定址處理方式不同
+    playready R2 vs arm
+
+forwared declartion
+ 1.API compeagibility,升級不用改header struct(struct 躲在.c內
+ 2.struct 寫在.c 
+     extern, 如 `extern char x[];` => 不能變更為 pointer 的形式
+    連續記憶體空間 不能轉成指標
+
+1 byte <=> 表達一個字
+
+

@@ -1,0 +1,137 @@
+# second
+1.Don't use printf , printf會幫你轉型,gdb 才是最原始的
+2. C 先有double 才有float
+3.64 bit data-moudle
+4.其實2^48 是現金很多OS有支援的定址 LP64 LPAE  
+	L                       L                             P
+	integer                long long                     pointer
+
+LP64 : unix freebsd linux...
+MS   : 
+
+is a function designator
+dereference function pointer會得到自己
+(***********printf)
+1.用gdb printf
+2.用objdump去驗證
+
+# total ordering predicate
+error rate: 金融業
+python : 0.1 + 0.2 - 0.3 != 0
+1.cpu arhchitecture
+2.error rate printf_internal數值運算
+
+
+execption handling
+1.divide zero
+2.IEE 754.....from 1985(白算盤)
+  ARMv8 sypport IEE754 2008 ---> support error rate 
+
+# integer overflow
+波音747  284 day crash 一次
+ 24 hour * 60 second 8 248 = 214272000
+
+# ariane5
+https://github.com/hylin-embedded-2015/ariane5/blob/master/t1.c
+
+# GNC
+
+# C value
+x & (x-1) = '0'
+	1.power of two
+	2.singend vs unsigned
+
+x | (x+1)
+x with lowest cleared bit set
+
+why C language 不可以直接改一個bit?
+	Ans:最後都是操作register
+		register 都是32 bit(bus
+
+
+# general type
+用bit wise的好處
+
+# log 2 image processing
+1.look up table
+
+int___builtin_clz(unsigned int x)
+
+# clz：查找一个数据x前置0的个数。
+__builtin_clz
+
+# 從c99以後 C++ c 兩邊就不一樣了
+
+# automic
+software : Dekker's algo
+	slow QQ
+
+# concurrency anf plarallelism
+1.recursive for cureecny
+2.functionanl programming in C
+
+Concurrency : 並行
+task composition : 拆好多動作 看你先做哪個
+
+Parallelism : 平行
+indepndant similar task ＃動作有高度相似行
+
+# Evaluation
+1.recursive change &&
+	c 邏輯運算 and or 有執行順序, bit wise沒有
+
+2.pure function(programming languange
+
+3. C ','
+pritnf(""),pritnf("");
+i++ && (i+j)
+i 有side effect
+
+C 只要不是0 就是true
+
+4.Happens-Before
+	A happens before B
+5.別用printf
+	1.轉型錯誤
+	2.IO overhead
+	3.sequence 加一行printfi 剛好解掉bug
+
+6.synchornize : 跨越thread的happen before
+
+7.Java
+
+public synchronized fun()
+{
+	i++
+}
+
+
+8.工商時間
+jcon;java virtual machine
+
+9.SMP : symetric multiprocessor system
+	ps.asmp amp smp 都不太一樣
+
+            mem
+------------------------------- ---------------bus arbiter
+cache           cache               cache
+processor 1    processor 2         processor 3
+
+1.flush (java 刷cache to memory : 浪費cache 功能
+  invaliadate
+
+2.register file
+	file : containor
+	ex: r0 r1 r2 r3...
+	context switch: siwth regsiter file
+	pc: program counter
+
+lock其實不是成本,wait才是成本！！！
+
+
+3.C C++ 
+	C99以後分道揚鑣
+	C++: smart pointer
+	STL
+	auto ptr
+

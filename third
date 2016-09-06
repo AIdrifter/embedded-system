@@ -1,0 +1,99 @@
+# dual issue
+一次可以跑兩道指令(  指令 != 單元
+super scalar
+
+# book
+tha art of programming
+assembly language
+
+
+# coroutines <=>  Threaded execution
+交錯的 function :
+http://blog.linux.org.tw/~jserv/archives/001848.html 
+
+# Posix Thread
+1.http://www.csie.ntu.edu.tw/~r92094/c++/pthread.txt
+2.read/write problem
+3.
+
+# recursice -> bit wise -> concourrency -> read.write problem
+fork()
+join()加入等待
+void *  => return
+
+# OPIC Object Persistence in C
+http://www.idryman.org/opic-slide/
+1.serialize : 序列化
+# Java serialization
+# RTTI
+run time identification: run time 動態識別
+
+ex:  struct empty
+C  sizeof(emppty) = 0
+C+ sizeof(empty) = 1 
+
+7.4 manager wanager
+# linux kernel,hadop....全職open source engineer
+
+free software(GPL 大家分享) != open source(商業導向
+
+ex: Android 出來以後 打趴一堆手機os 公司
+以前連compiler都要花錢買
+open source 把門檻拉高
+open source 要在草創期貢獻
+
+jserv:以前寫過web kit
+
+小心return register
+# https://en.wikipedia.org/wiki/X86_calling_conventions
+# caller-saved or callee-saved
+
+caller-saved       caslled-save
+        A   ----->   B
+
+ret = register
+
+ps. ARM: AAPCS
+
+# C++ name magaling
+
+# function wiki
+
+command : dbkg ??
+
+# 3. C++ template
+http://en.cppreference.com/w/cpp/language/partial_specialization
+partial template 
+
+# hyperloglog
+1.regular expression 
+用小公式表達大筆資料
+會有error rate
+
+# attack
+英文其實是主動
+
+# perf
+perf 虛擬機會測不准
+
+# cahce miss : 找電話簿last name
+1.link list performance issue => memory is not continusouly
+2.建立hash function 需要成本
+# https://en.wikipedia.org/wiki/Perfect_hash_function
+perfect hash function : 前提知道資料長怎樣
+不適合新增 刪除
+
+基因演算法: Crosssover
+
+
+# homework
+1.link list swap
+2.merge sort time complexity
+3.fork sequence 
+	fork出來 os沒保證誰先執行
+	process shceduler form kernel 2.3.6
+	linux schedule let child first
+	雖然process順序對了 但是printf是無法控制的
+
+4.conuting semaphore
+
