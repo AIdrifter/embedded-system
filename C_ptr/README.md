@@ -1,3 +1,6 @@
+# 你所不知道的C語言
+https://www.youtube.com/watch?v=VpyaxUdSd_s
+
 1. 面試愛考
 http://stackoverflow.com/questions/8208021/how-to-increment-a-pointer-address-and-pointers-value/8208106#8208106
 
