@@ -1,0 +1,16 @@
+# function pointer
+    void **(*d) (int &, char **(*)(char *, char **));
+
+    signal 系統呼叫的宣告方式也很經典: 
+    How to read this prototype?
+
+# c99 spec 很重要
+ISO/IEC 9899 (簡稱 "C99")
+前p.146  粉重要 
+
+# 練習題) 設定絕對地址為 `0x67a9` 的 32-bit 整數變數的值為 `0xaa6`，該如何寫？ 
+    *(int32_t * const) (0x67a9) = 0xaa6;
+
+# 6.3.2.3.8
+void* 可以和function pointer互相轉換嘛？
+Ans:undefined behavior
