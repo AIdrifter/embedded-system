@@ -198,6 +198,7 @@ inline declared functions have difficulties with other symbols that have no or i
 
 # dynamic linking
 	PLT : program lookup table
+<<<<<<< HEAD
 		    local 這邊 找不到 才會靠GOT找
 			跳板
 
@@ -268,3 +269,5 @@ ASLR : Address space layout
 
 ANS:ASLR  開 => VA會不一樣 => 避免被攻擊 
           關 => VA一樣
+
+
